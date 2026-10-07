@@ -19,8 +19,7 @@ import java.io.InputStream;
 public class AppContextListener implements ServletContextListener {
 
     // Logger para trazar eventos usando SLF4J
-    private static final Logger logger =
-            LoggerFactory.getLogger(AppContextListener.class);
+    private static final Logger logger = LoggerFactory.getLogger(AppContextListener.class);
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {

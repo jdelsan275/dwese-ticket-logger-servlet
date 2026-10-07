@@ -51,6 +51,13 @@
       <artifactId>mariadb-java-client</artifactId>
       <version>3.5.10</version>
     </dependency>
+    <!-- Dependencia LOMBOK -->
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.48</version>
+        <scope>provided</scope>
+      </dependency>
   </dependencies>
   <build>
     <finalName>dwese-ticket-logger-servlet</finalName>
@@ -63,6 +70,13 @@
         <configuration>
           <source>24</source>
           <target>24</target>
+          <annotationProcessorPaths>
+            <path>
+              <groupId>org.projectlombok</groupId>
+              <artifactId>lombok</artifactId>
+              <version>1.18.48</version>
+            </path>
+          </annotationProcessorPaths>
         </configuration>
       </plugin>
       <!-- Plugin para la generación de javadoc -->
