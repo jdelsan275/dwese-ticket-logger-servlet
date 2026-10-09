@@ -42,11 +42,11 @@ public class LanguageServlet extends HttpServlet {
 
                 // Comprobar si el idioma seleccionado es español ("es")
                 if (language.equals("es")) {
-                    locale = new Locale("es");
+                    locale = Locale.of("es");
                     logger.info("Idioma seleccionado: Español (es)");
                 } else {
                     // Si no es español, se establece por defecto el inglés
-                    locale = new Locale("en");
+                    locale = Locale.of("en");
                     logger.info("Idioma seleccionado: Inglés (en)");
                 }
 
